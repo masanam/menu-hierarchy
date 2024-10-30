@@ -7,8 +7,8 @@ export default function NavLink({ href, active, children }) {
             href={href}
             className={
                 active
-                    ? 'text-blue-500'
-                    : 'text-red-500'
+                    ? 'text-white'
+                    : 'text-gray-600'
             }
         >
             {children}

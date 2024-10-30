@@ -29,7 +29,7 @@ const Sidebar = ({ href, isCollapsed, toggleSidebar }) => {
                     <li key={item.id}>
                         <NavLink href={item.href} active={item.href}>
                         <svg className="h-8 w-8 text-slate-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round">  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" /></svg>
-                            <span className= {`flex items-center text-white py-2.5 px-4 hover:bg-gray-700 transition ${isActive ? "bg-gray-700" : ""}`}>{item.label}</span>
+                            <span className= {`flex items-center text-white py-2.5 px-4 hover:bg-gray-700 transition `}>{item.label}</span>
                         </NavLink>
                     </li>
                 ))}
@@ -38,7 +38,7 @@ const Sidebar = ({ href, isCollapsed, toggleSidebar }) => {
                     <li key={item.id}>
                         <NavLink href={item.href} active={item.href}>
                         <svg className="h-8 w-8 text-slate-500"  width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="4" width="6" height="6" rx="1" />  <rect x="14" y="4" width="6" height="6" rx="1" />  <rect x="4" y="14" width="6" height="6" rx="1" />  <rect x="14" y="14" width="6" height="6" rx="1" /></svg>                        
-                        <span className= {`flex items-center py-2.5 px-4 hover:bg-gray-700 transition ${isActive ? "text-gray-700" : "text-gray-600"}`}>{item.label}</span>
+                        <span className= {`flex items-center py-2.5 px-4 hover:bg-gray-700 transition `}>{item.label}</span>
                         </NavLink>
                     </li>
                 ))}
@@ -49,7 +49,7 @@ const Sidebar = ({ href, isCollapsed, toggleSidebar }) => {
                 <li key={item.id}>
                         <NavLink href={item.href} active={item.href}>
                         <svg className="h-8 w-8 text-slate-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round">  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" /></svg>
-                        <span className= {`flex items-center text-gray-600 py-2.5 px-4 hover:bg-gray-700 transition ${isActive ? "bg-gray-700" : ""}`}>{item.label}</span>
+                        <span className= {`flex items-center text-gray-600 py-2.5 px-4 hover:bg-gray-700 transition `}>{item.label}</span>
                         </NavLink>
                 </li>
             ))}
